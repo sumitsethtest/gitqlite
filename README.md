@@ -140,7 +140,7 @@ SELECT * FROM files WHERE commit_id LIKE 'shortened_commit_id%'
 ```
 
 
-Returns author emails with lines added/removed, ordered by total number of commits in the history:
+Returns author emails with lines added/removed, ordered by total number of commits in thehistory:
 ```sql
 SELECT count(*) AS commits, SUM(additions) AS additions, SUM(deletions) AS  deletions, author_email FROM commits GROUP BY author_email ORDER BY commits
 ```
